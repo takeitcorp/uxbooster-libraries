@@ -1,0 +1,48 @@
+{
+  "name": "@uxbooster/date",
+  "version": "1.0.0-beta.1",
+  "description": "Date utility library for UX Booster.",
+  "author": "Take Corp.",
+  "license": "MIT",
+  "keywords": [
+    "uxbooster",
+    "date"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takeitcorp/uxbooster-libraries.git",
+    "directory": "packages/date"
+  },
+  "bugs": {
+    "url": "https://github.com/takeitcorp/uxbooster-libraries/issues"
+  },
+  "homepage": "https://github.com/takeitcorp/uxbooster-libraries#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": "9.1.1"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean:build": "rimraf ./dist",
+    "dev": "nodemon",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "pnpm lint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "jest",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.1"
+  },
+  "packageManager": "pnpm@9.1.1"
+}

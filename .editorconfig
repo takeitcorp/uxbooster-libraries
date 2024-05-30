@@ -1,0 +1,15 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+# Indentation style
+indent_style = space
+indent_size = 2
+
+[*.{js,json,yml}]
+charset = utf-8
+
+# JavaScript files
+[*.{js,jsx,ts,tsx}]
+max_line_length = 100
