@@ -1,4 +1,5 @@
 export * from './array';
+export * from './storage';
 export * from './string';
 export * from './formatBytes';
 export * from './getType';
