@@ -21,6 +21,10 @@ export interface IStorageItem {
  * 로컬 스토리지에 저장된 데이터 항목을 나타내는 클래스입니다.
  *
  * @class StorageItem
+ * @example
+ * const item = new StorageItem({ key: 'username', value: 'john_doe' });
+ * console.log(item.key); // 'username'
+ * console.log(item.value); // 'john_doe'
  */
 export class StorageItem {
   /**

@@ -5,6 +5,28 @@ import LocalStorageWorker from './LocalStorageWorker';
  *
  * @class CredentialStorage
  * @template T - 로그인 정보의 타입
+ * @example
+ * interface LoginInfo {
+ *   username: string;
+ *   token: string;
+ *   isRemember: boolean;
+ * }
+ *
+ * const credentials = new CredentialStorage<LoginInfo>('user_credentials', {
+ *   username: 'john_doe',
+ *   token: 'abcd1234',
+ *   isRemember: true
+ * });
+ *
+ * // 로그인 정보 설정 및 저장
+ * credentials.set({ username: 'john_doe', token: 'abcd1234', isRemember: true });
+ *
+ * // 로그인 정보 가져오기
+ * const info = credentials.get();
+ * console.log(info.username); // 'john_doe'
+ *
+ * // 로그인 정보 삭제
+ * credentials.clear();
  */
 export default class CredentialStorage<T extends object> {
   private storageWorker: LocalStorageWorker;

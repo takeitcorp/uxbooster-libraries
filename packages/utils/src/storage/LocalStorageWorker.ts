@@ -4,6 +4,11 @@ import { StorageItem } from './StorageItem';
  * 브라우저의 로컬 스토리지를 사용하여 데이터를 저장하고 관리하기 위한 클래스입니다.
  *
  * @class LocalStorageWorker
+ * @example
+ * const storage = new LocalStorageWorker();
+ * storage.add('username', 'john_doe');
+ * const username = storage.get('username');
+ * console.log(username); // 'john_doe'
  */
 export default class LocalStorageWorker {
   /**
