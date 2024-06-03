@@ -1,0 +1,51 @@
+{
+  "name": "@uxbooster/take-fetch",
+  "version": "1.0.0-beta.1",
+  "description": "A fetch library with extended features for UX Booster.",
+  "author": "Take Corp.",
+  "license": "MIT",
+  "keywords": [
+    "uxbooster",
+    "fetch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takeitcorp/uxbooster-libraries.git",
+    "directory": "packages/take-fetch"
+  },
+  "bugs": {
+    "url": "https://github.com/takeitcorp/uxbooster-libraries/issues"
+  },
+  "homepage": "https://github.com/takeitcorp/uxbooster-libraries#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": "9.1.1"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean:build": "rimraf ./dist",
+    "dev": "nodemon",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "pnpm lint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "jest",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "react-promise-tracker": "^2.1.1"
+  },
+  "peerDependencies": {
+    "react-promise-tracker": "^2.1.1"
+  },
+  "packageManager": "pnpm@9.1.1",
+  "devDependencies": {}
+}
