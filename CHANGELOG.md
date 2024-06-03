@@ -7,5 +7,6 @@
 ### Added
 
 - @uxbooster/date 패키지 추가됨.
+- @uxbooster/take-fetch 패키지 추가됨.
 - @uxbooster/utils 패키지 추가됨.
 - @uxbooster/validators 패키지 추가됨.

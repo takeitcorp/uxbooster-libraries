@@ -6,4 +6,4 @@
 
 ### Added
 
-- 날짜 관련 유틸리티 함수 추가됨.
+- fetch API에 기능을 확장한 take-fetch 추가됨.
