@@ -1,6 +1,7 @@
+import { parseISO } from 'date-fns';
+
 import { formatDate } from './formatDate';
 import { convertStringToDate } from './convertStringToDate';
-import { parseDateString } from './parseDateString';
 
 const TZ = 'Asia/Seoul';
 
@@ -27,7 +28,7 @@ export const convertStringToDateFormat = (
 ) => {
   if (!date) return '';
 
-  const parsedDate = typeof date === 'string' ? parseDateString(date) : date;
+  const parsedDate = typeof date === 'string' ? parseISO(date) : date;
   const dateInstance = convertStringToDate(parsedDate, timezone);
   return formatDate(dateInstance, formatStr);
 };

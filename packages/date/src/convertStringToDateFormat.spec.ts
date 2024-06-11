@@ -7,6 +7,11 @@ describe('convertStringToDateFormat function', () => {
     expect(formattedDate).toBe('2020-01-01');
   });
 
+  it('formats the date string "yyyyMMdd" format correctly', () => {
+    const formattedDate = convertStringToDateFormat('20200101');
+    expect(formattedDate).toBe('2020-01-01');
+  });
+
   it('formats the Date object correctly', () => {
     const date = new Date(2020, 0, 1);
     const formattedDate = convertStringToDateFormat(date, 'yyyy-MM-dd');
