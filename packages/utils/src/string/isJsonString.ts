@@ -19,7 +19,6 @@ export const isJsonString = (v: string | undefined | null): boolean => {
   }
 
   try {
-    JSON.stringify;
     const json = JSON.parse(v);
     return typeof json === 'object';
   } catch (e) {
