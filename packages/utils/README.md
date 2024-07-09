@@ -27,6 +27,8 @@ console.log(isString('hello')); // true
 | [not](src/array/not.ts)                    | 두 배열 간의 차집합을 계산하는 함수.                                        | `not([1, 2, 3], [2, 3, 4]); // [1]`                  |
 | [format](src/string/format.ts)             | 문자열 내의 포맷 지정된 플레이스홀더를 대체합니다.                          | `format('Hello, {0}!', ['John']); // 'Hello, John!'` |
 | [isJsonString](src/string/isJsonString.ts) | 주어진 문자열이 JSON 형식인지 확인합니다.                                   | `isJsonString('{ "key": "value" }'); // true`        |
+| [toCamelCase](src/string/toCamelCase.ts)   | 문자열을 Camel case로 변환합니다.                                           | `toCamelCase('hello world'); // helloWorld`          |
+| [toPascalCase](src/string/toPascalCase.ts) | 문자열을 Pascal case로 변환합니다.                                          | `toPascalCase('hello world'); // HelloWorld`         |
 | [formatBytes](src/formatBytes.ts)          | 바이트 크기를 형식화된 문자열로 변환합니다.                                 | `formatBytes(1024); // '1 KB'`                       |
 | [getType](src/getType.ts)                  | 주어진 객체의 타입을 문자열로 반환합니다.                                   | `getType('hello'); // 'String'`                      |
 | [isArray](src/isArray.ts)                  | 주어진 값이 배열인지 확인합니다.                                            | `isArray([1, 2, 3]); // true`                        |
