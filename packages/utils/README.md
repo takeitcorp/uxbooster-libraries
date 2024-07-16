@@ -30,6 +30,7 @@ console.log(isString('hello')); // true
 | [toCamelCase](src/string/toCamelCase.ts)         | 문자열을 Camel case로 변환합니다.                                           | `toCamelCase('hello world'); // helloWorld`          |
 | [toPascalCase](src/string/toPascalCase.ts)       | 문자열을 Pascal case로 변환합니다.                                          | `toPascalCase('hello world'); // HelloWorld`         |
 | [toRestfulFormat](src/string/toRestfulFormat.ts) | 문자열을 RESTful API에서 사용 가능한 형태로 변환합니다.                     | `toRestfulFormat('hello world'); // hello-world`     |
+| [toSnakeCase](src/string/toSnakeCase.ts)         | 문자열을 스네이크 케이스로 변환합니다.                                      | `toSnakeCase('hello world'); // hello_world`         |
 | [formatBytes](src/formatBytes.ts)                | 바이트 크기를 형식화된 문자열로 변환합니다.                                 | `formatBytes(1024); // '1 KB'`                       |
 | [getType](src/getType.ts)                        | 주어진 객체의 타입을 문자열로 반환합니다.                                   | `getType('hello'); // 'String'`                      |
 | [isArray](src/isArray.ts)                        | 주어진 값이 배열인지 확인합니다.                                            | `isArray([1, 2, 3]); // true`                        |
