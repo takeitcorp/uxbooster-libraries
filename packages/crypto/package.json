@@ -1,0 +1,53 @@
+{
+  "name": "@uxbooster/crypto",
+  "version": "1.0.0-beta.1",
+  "description": "Crypto utility library for UX Booster.",
+  "author": "Take Corp.",
+  "license": "MIT",
+  "keywords": [
+    "uxbooster",
+    "crypto",
+    "rsa",
+    "aes",
+    "gcm",
+    "hash"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takeitcorp/uxbooster-libraries.git",
+    "directory": "packages/crypto"
+  },
+  "bugs": {
+    "url": "https://github.com/takeitcorp/uxbooster-libraries/issues"
+  },
+  "homepage": "https://github.com/takeitcorp/uxbooster-libraries#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": "9.1.1"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean:build": "rimraf ./dist",
+    "dev": "nodemon",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "pnpm lint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "jest",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.1"
+  },
+  "packageManager": "pnpm@9.1.1",
+  "devDependencies": {}
+}
