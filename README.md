@@ -4,6 +4,7 @@
 
 ## 패키지 목록
 
+- [@uxbooster/crypto](./packages/crypto/README.md)
 - [@uxbooster/date](./packages/date/README.md)
 - [@uxbooster/take-fetch](./packages/take-fetch/README.md)
 - [@uxbooster/utils](./packages/utils/README.md)
