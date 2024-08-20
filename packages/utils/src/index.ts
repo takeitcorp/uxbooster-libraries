@@ -8,6 +8,7 @@ export * from './isBoolean';
 export * from './isEmpty';
 export * from './isFunction';
 export * from './isInt';
+export * from './isMobileDevice';
 export * from './isNull';
 export * from './isNumber';
 export * from './isObject';
