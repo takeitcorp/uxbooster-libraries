@@ -38,6 +38,7 @@ console.log(isString('hello')); // true
 | [isEmpty](src/isEmpty.ts)                        | 주어진 값이 비어 있는지 확인합니다.                                         | `isEmpty(null); // true`                             |
 | [isFunction](src/isFunction.ts)                  | 주어진 값이 함수인지 확인합니다.                                            | `isFunction(() => {}); // true`                      |
 | [isInt](src/isInt.ts)                            | 주어진 값이 정수인지 확인합니다.                                            | `isInt(123); // true`                                |
+| [isMobileDevice](src/isMobileDevice.ts)          | 사용자가 모바일 기기에서 접속했는지 여부를 확인합니다.                      | `isMobileDevice(); // true`                          |
 | [isNull](src/isNull.ts)                          | 주어진 값이 `undefined` 또는 `null`인지 확인합니다.                         | `isNull(null); // true`                              |
 | [isNumber](src/isNumber.ts)                      | 주어진 값이 숫자인지 확인합니다.                                            | `isNumber(123); // true`                             |
 | [isObject](src/isObject.ts)                      | 주어진 값이 객체인지 확인합니다.                                            | `isObject({}); // true`                              |
