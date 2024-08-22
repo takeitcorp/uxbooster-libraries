@@ -11,7 +11,6 @@
  * @example
  * // false
  * isJsonString('hello');
- * @returns
  */
 export const isJsonString = (v: string | undefined | null): boolean => {
   if (v === undefined || v === null) {
