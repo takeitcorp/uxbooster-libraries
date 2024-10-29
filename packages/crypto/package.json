@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/crypto",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Crypto utility library for UX Booster.",
   "author": "Take Corp.",
   "license": "MIT",
