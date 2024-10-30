@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Date utility library for UX Booster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -37,7 +37,7 @@
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "test": "jest",
+    "test": "jest --verbose",
     "typecheck": "tsc"
   },
   "dependencies": {

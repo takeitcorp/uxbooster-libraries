@@ -37,7 +37,7 @@
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "test": "jest",
+    "test": "jest --verbose",
     "typecheck": "tsc"
   },
   "packageManager": "pnpm@9.1.1"
