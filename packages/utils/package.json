@@ -1,10 +1,11 @@
 {
   "name": "@uxbooster/utils",
-  "version": "1.0.3",
-  "description": "Utility functions for UX Booster.",
+  "version": "1.0.4",
+  "description": "Utility functions for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
   "keywords": [
+    "take",
     "uxbooster",
     "utils"
   ],
