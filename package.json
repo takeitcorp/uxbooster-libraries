@@ -1,10 +1,11 @@
 {
   "name": "uxbooster-libraries",
-  "version": "1.0.0",
-  "description": "Libraries for UX Booster",
+  "version": "1.0.2",
+  "description": "Libraries for UXBooster",
   "author": "Take Corp.",
   "license": "MIT",
   "keywords": [
+    "take",
     "uxbooster"
   ],
   "repository": {
@@ -53,7 +54,8 @@
     "typescript": "^5.3.2"
   },
   "resolutions": {
-    "micromatch": ">=4.0.8"
+    "micromatch": ">=4.0.8",
+    "cross-spawn": ">=7.0.5"
   },
   "packageManager": "pnpm@9.1.1"
 }
