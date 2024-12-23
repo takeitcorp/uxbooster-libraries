@@ -4,7 +4,7 @@ import { encrypt } from './encrypt';
 
 describe('encrypt function', () => {
   it('should encrypt data correctly', () => {
-    const plainText = 'Hello, UX Booster!';
+    const plainText = 'Hello, UXBooster!';
     const key = randomBytes(32);
 
     console.log(`Plain Text: ${plainText}`);

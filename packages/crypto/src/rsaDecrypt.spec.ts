@@ -6,7 +6,7 @@ import { rsaDecrypt } from './rsaDecrypt';
 describe('rsaDecrypt function', () => {
   it('should decrypt data using RSA private key', () => {
     const { publicKey, privateKey } = generateRSAKeyPair();
-    const text = 'Hello, UX Booster!';
+    const text = 'Hello, UXBooster!';
     console.log(`text: ${text}`);
 
     const encryptedText = rsaEncrypt(text, publicKey);

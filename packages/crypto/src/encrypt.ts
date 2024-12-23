@@ -15,7 +15,7 @@ const ALGORITHM: CipherGCMTypes = 'aes-256-gcm';
  * import { randomBytes } from 'crypto';
  *
  * const key = randomBytes(32);
- * const plainText = 'Hello, UX Booster!';
+ * const plainText = 'Hello, UXBooster!';
  *
  * // 암호화 예제
  * const encryptedData = encrypt(plainText, key);

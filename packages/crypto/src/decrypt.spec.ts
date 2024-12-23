@@ -5,7 +5,7 @@ import { decrypt } from './decrypt';
 
 describe('decrypt function', () => {
   it('should decrypt data correctly', () => {
-    const plainText = 'Hello, UX Booster!';
+    const plainText = 'Hello, UXBooster!';
     const key = randomBytes(32);
     console.log(`key: ${key.toString('hex')}`);
 

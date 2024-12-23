@@ -1,7 +1,7 @@
 {
   "name": "@uxbooster/take-fetch",
   "version": "1.0.0",
-  "description": "A fetch library with extended features for UX Booster.",
+  "description": "A fetch library with extended features for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
   "keywords": [
