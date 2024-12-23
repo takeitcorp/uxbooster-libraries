@@ -5,7 +5,7 @@ import { rsaEncrypt } from './rsaEncrypt';
 describe('rsaEncrypt function', () => {
   it('should encrypt data using RSA puclic key', () => {
     const { publicKey } = generateRSAKeyPair();
-    const text = 'Hello, UX Booster!';
+    const text = 'Hello, UXBooster!';
     console.log(`text: ${text}`);
 
     const encryptedText = rsaEncrypt(text, publicKey);

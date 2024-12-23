@@ -19,7 +19,7 @@ const ALGORITHM: CipherGCMTypes = 'aes-256-gcm';
  *
  * // 복호화 예제
  * const decryptedText = decrypt(cipherText, key);
- * console.log(decryptedText); // 출력: 'Hello, UX Booster!'
+ * console.log(decryptedText); // 출력: 'Hello, UXBooster!'
  * ```
  */
 export const decrypt = (cipherText: string, key: Buffer): string => {

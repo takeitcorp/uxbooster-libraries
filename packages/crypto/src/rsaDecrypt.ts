@@ -12,7 +12,7 @@ import { privateDecrypt } from 'crypto';
  * import { generateRSAKeyPair, rsaDecrypt } from '@uxbooster/crypto';
  *
  * const { publicKey, privateKey } = generateRSAKeyPair();
- * const text = 'Hello, UX Booster!';
+ * const text = 'Hello, UXBooster!';
  *
  * // RSA 암호화 예제
  * const encryptedText = rsaEncrypt(text, publicKey);
