@@ -1,5 +1,7 @@
 export * from './hasSpecialChar';
 export * from './isBRN';
+export * from './isCardNumber';
+export * from './isCRN';
 export * from './isEmail';
 export * from './isHangulOnly';
 export * from './isMobilePhone';
