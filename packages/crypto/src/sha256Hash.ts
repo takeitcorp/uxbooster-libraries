@@ -10,7 +10,7 @@ import crypto from 'crypto';
  * ```typescript
  * import { sha256Hash } from '@uxbooster/crypto';
  *
- * const testString = 'Hello, UX Booster!';
+ * const testString = 'Hello, UXBooster!';
  *
  * // SHA-256 알고리즘으로 해싱 예제
  * const hash = sha256Hash(testString);
