@@ -19,6 +19,7 @@ export * from './isNumber';
 export * from './isObject';
 export * from './isString';
 export * from './isUndefined';
+export * from './jwtDecode';
 export * from './nvl';
 export * from './toBoolean';
 export * from './toInt';
