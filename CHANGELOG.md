@@ -2,6 +2,13 @@
 
 모든 프로젝트 변경 사항을 문서화합니다.
 
+## [1.0.4] - 2025-01-23
+
+### Added
+
+- @uxbooster/eslint-config 패키지 추가됨.
+- @uxbooster/prettier-config 패키지 추가됨.
+
 ## [1.0.3] - 2024-12-23
 
 ### Updated
