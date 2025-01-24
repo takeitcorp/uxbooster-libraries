@@ -6,6 +6,8 @@
 
 - [@uxbooster/crypto](./packages/crypto/README.md)
 - [@uxbooster/date](./packages/date/README.md)
+- [@uxbooster/eslint-config](./packages/eslint-config/README.md)
+- [@uxbooster/prettier-config](./packages/prettier-config/README.md)
 - [@uxbooster/take-fetch](./packages/take-fetch/README.md)
 - [@uxbooster/utils](./packages/utils/README.md)
 - [@uxbooster/validators](./packages/validators/README.md)

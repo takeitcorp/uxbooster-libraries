@@ -1,0 +1,56 @@
+{
+  "name": "@uxbooster/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint configuration used by UXBooster.",
+  "author": "Take Corp.",
+  "license": "MIT",
+  "keywords": [
+    "uxbooster",
+    "eslint",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takeitcorp/uxbooster-libraries.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/takeitcorp/uxbooster-libraries/issues"
+  },
+  "homepage": "https://github.com/takeitcorp/uxbooster-libraries#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.20.2",
+    "pnpm": "9.1.1"
+  },
+  "main": "index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@eslint/compat": "^1.2.5",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "14.2.23",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "typescript-eslint": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__eslintrc": "^2.1.2"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.4.5"
+  },
+  "overrides": {
+    "eslint": "$eslint"
+  },
+  "packageManager": "pnpm@9.1.1"
+}
