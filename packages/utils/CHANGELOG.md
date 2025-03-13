@@ -2,6 +2,18 @@
 
 이 프로젝트의 변경 사항을 문서화합니다.
 
+## [1.0.7] - 2025-03-13
+
+### Added
+
+- [copyObject](src/copyObject.ts) 함수 추가
+
+## [1.0.6] - 2025-01-20
+
+### Added
+
+- [jwtDecode](src/jwtDecode.ts) 함수 추가
+
 ## [1.0.5] - 2024-12-23
 
 ### Added

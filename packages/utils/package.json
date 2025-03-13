@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/utils",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Utility functions for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -22,8 +22,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.17.0",
-    "pnpm": "9.1.1"
+    "node": ">=18.17.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,6 +39,5 @@
     "format:fix": "prettier --write .",
     "test": "jest --verbose",
     "typecheck": "tsc"
-  },
-  "packageManager": "pnpm@9.1.1"
+  }
 }

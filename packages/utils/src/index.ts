@@ -3,6 +3,7 @@ export * from './masking';
 export * from './number';
 export * from './storage';
 export * from './string';
+export * from './copyObject';
 export * from './decode';
 export * from './formatBytes';
 export * from './generateUUID';
