@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/prettier-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Prettier configuration used by UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -21,8 +21,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.20.2",
-    "pnpm": "9.1.1"
+    "node": ">=18.20.2"
   },
   "main": "index.js",
   "type": "module",
@@ -46,6 +45,5 @@
   },
   "devDependencies": {
     "prettier": "^3.4.2"
-  },
-  "packageManager": "pnpm@9.1.1"
+  }
 }

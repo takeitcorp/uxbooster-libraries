@@ -2,6 +2,12 @@
 
 이 프로젝트의 변경 사항을 문서화합니다.
 
+## [1.0.8] - 2025-03-14
+
+### Added
+
+- [replaceDynamicSegments](src/replaceDynamicSegments.ts) 함수 추가
+
 ## [1.0.7] - 2025-03-13
 
 ### Added

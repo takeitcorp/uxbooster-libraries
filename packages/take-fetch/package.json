@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/take-fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fetch library with extended features for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -21,8 +21,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.17.0",
-    "pnpm": "9.1.1"
+    "node": ">=18.17.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -45,7 +44,5 @@
   },
   "peerDependencies": {
     "react-promise-tracker": "^2.1.1"
-  },
-  "packageManager": "pnpm@9.1.1",
-  "devDependencies": {}
+  }
 }

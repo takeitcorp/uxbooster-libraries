@@ -16,8 +16,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.17.0",
-    "pnpm": "9.1.1"
+    "node": ">=18.17.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -56,6 +55,5 @@
   "resolutions": {
     "micromatch": ">=4.0.8",
     "cross-spawn": ">=7.0.5"
-  },
-  "packageManager": "pnpm@9.1.1"
+  }
 }
