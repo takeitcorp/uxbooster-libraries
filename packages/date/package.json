@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/date",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Date utility library for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -21,8 +21,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.17.0",
-    "pnpm": "9.1.1"
+    "node": ">=18.17.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -43,7 +42,5 @@
   "dependencies": {
     "date-fns": "^2.30.0",
     "date-fns-tz": "^2.0.1"
-  },
-  "packageManager": "pnpm@9.1.1",
-  "devDependencies": {}
+  }
 }
