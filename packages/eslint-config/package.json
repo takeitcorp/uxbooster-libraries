@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint configuration used by UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -22,8 +22,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.20.2",
-    "pnpm": "9.1.1"
+    "node": ">=18.20.2"
   },
   "main": "index.js",
   "type": "module",
@@ -51,6 +50,5 @@
   },
   "overrides": {
     "eslint": "$eslint"
-  },
-  "packageManager": "pnpm@9.1.1"
+  }
 }
