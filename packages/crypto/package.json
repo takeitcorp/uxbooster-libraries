@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/crypto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Crypto utility library for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -42,9 +42,5 @@
     "format:fix": "prettier --write .",
     "test": "jest --verbose",
     "typecheck": "tsc"
-  },
-  "dependencies": {
-    "date-fns": "^2.30.0",
-    "date-fns-tz": "^2.0.1"
   }
 }
