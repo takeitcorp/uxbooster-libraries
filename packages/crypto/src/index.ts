@@ -4,3 +4,4 @@ export * from './generateRSAKeyPair';
 export * from './rsaDecrypt';
 export * from './rsaEncrypt';
 export * from './sha256Hash';
+export * from './sha512Hash';
