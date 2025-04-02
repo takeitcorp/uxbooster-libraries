@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint configuration used by UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "@eslint/js": "^9.18.0",
     "@typescript-eslint/eslint-plugin": "^8.21.0",
     "eslint": "^9.18.0",
-    "eslint-config-next": "14.2.23",
+    "eslint-config-next": "^14.0.0 || ^15.0.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react-hooks": "^5.1.0",
