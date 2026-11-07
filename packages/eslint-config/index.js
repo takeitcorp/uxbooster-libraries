@@ -1,43 +1,26 @@
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import js from '@eslint/js';
-import ts from 'typescript-eslint';
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
+import nextTypescript from 'eslint-config-next/typescript';
 import prettierConfig from 'eslint-config-prettier';
-import { FlatCompat } from '@eslint/eslintrc';
-import { fixupConfigRules } from '@eslint/compat';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
 import prettier from 'eslint-plugin-prettier';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// FlatCompat를 사용하여 ESLint 설정을 호환되게 로드
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
-
-// next/core-web-vitals 설정을 적용하고 rules를 수정
-const patchedConfig = fixupConfigRules([...compat.extends('next/core-web-vitals')]);
-
 // 사용자 정의 rules 설정
+// .next, out, build, next-env.d.ts 는 eslint-config-next 의 전역 ignores 에 이미 포함되어 있음
 const config = [
-  ...patchedConfig,
-  ...ts.configs.recommended,
+  ...nextCoreWebVitals,
+  ...nextTypescript,
   prettierConfig,
 
-  { ignores: ['.next/*'] },
+  {
+    rules: {
+      // eslint-config-next/typescript 가 warn 으로 낮춘 규칙을 typescript-eslint 권장 수준(error)으로 유지
+      '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/no-unused-expressions': 'error',
+    },
+  },
   {
     files: ['**/*.ts', '**/*.tsx'],
     plugins: {
-      '@typescript-eslint': typescriptEslint,
       prettier,
-    },
-    settings: {
-      react: {
-        version: 'detect', // React 버전을 자동으로 감지
-      },
     },
     rules: {
       // React 컴포넌트의 displayName 설정을 비활성화

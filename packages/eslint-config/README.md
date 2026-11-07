@@ -8,6 +8,13 @@
 pnpm add -D @uxbooster/eslint-config
 ```
 
+### 요구 사항
+
+- Node.js 20.9.0 이상
+- ESLint 9
+- Next.js 16 (`eslint-config-next`가 실행 시 `next` 패키지를 불러오므로 프로젝트에 설치되어 있어야 합니다)
+- TypeScript 5.4.5 이상, 6.1.0 미만
+
 ## 커스텀 규칙 추가 설정
 
 1. 프로젝트 루트 폴더에 `eslint.config.mjs` 파일을 생성합니다.
@@ -24,9 +31,9 @@ const config = [
   {
     settings: {
       react: {
-        // React 버전을 명시 (예: '16.9', '17.0', '18.0')
+        // React 버전을 명시 (예: '18.3', '19.0', '19.2')
         // 기본값 'detect' 사용 시 자동으로 버전을 감지
-        version: '18.3',
+        version: '19.2',
       },
     },
     rules: {
