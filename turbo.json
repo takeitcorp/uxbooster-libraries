@@ -1,6 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "tasks": {
     "//#lint": {
       "inputs": ["!.git/**", "!node_modules/**", "!packages/**"]
     },
@@ -37,8 +37,7 @@
     }
   },
   "globalDependencies": [
-    ".eslintrc.js",
-    ".eslintignore",
+    "eslint.config.mjs",
     ".prettierrc.yaml",
     "tsconfig.base.json",
     "tsconfig.build.json",

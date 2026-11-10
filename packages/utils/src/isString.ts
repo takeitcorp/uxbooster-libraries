@@ -16,6 +16,6 @@
  * // false
  * isString({});
  */
-export function isString(v: any): boolean {
+export function isString(v: unknown): boolean {
   return typeof v === 'string';
 }

@@ -22,13 +22,18 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": ">=26.0.0"
   },
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "CHANGELOG.md"
+  ],
   "dependencies": {
-    "eslint": "^9.18.0",
+    "eslint": "^9.39.5",
     "eslint-config-next": "^16.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.0"

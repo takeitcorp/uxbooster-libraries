@@ -19,6 +19,6 @@
 export function isEmail(v: string | null | undefined): boolean {
   if (!v || typeof v !== 'string') return false;
 
-  const format = /^((\w|[\-\.])+)@((\w|[\-\.])+)\.[A-Za-z]{2,}$/;
+  const format = /^((\w|[-.])+)@((\w|[-.])+)\.[A-Za-z]{2,}$/;
   return format.test(v);
 }

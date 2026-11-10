@@ -28,7 +28,7 @@
  * // undefined
  * toInt(undefined);
  */
-export function toInt(v: any): number | undefined {
+export function toInt(v: unknown): number | undefined {
   if (typeof v === 'number') {
     return isFinite(v) ? v | 0 : undefined;
   }

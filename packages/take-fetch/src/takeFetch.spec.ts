@@ -56,11 +56,9 @@ describe('takeFetch', () => {
   it('should handle response interceptor', async () => {
     // Arrange
     const url = 'https://jsonplaceholder.typicode.com/posts/1';
-    const responseInterceptor = jest.fn(
-      async (response: TakeResponse, requestArgs: TakeFetchArgs) => {
-        return response;
-      },
-    );
+    const responseInterceptor = jest.fn(async (response: TakeResponse) => {
+      return response;
+    });
     const options: TakeFetchOptions = {
       interceptors: {
         response: responseInterceptor,

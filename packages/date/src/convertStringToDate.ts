@@ -1,4 +1,4 @@
-import { utcToZonedTime } from 'date-fns-tz';
+import { toZonedTime } from 'date-fns-tz';
 import { parseDateString } from './parseDateString';
 
 const TZ = 'Asia/Seoul';
@@ -28,5 +28,5 @@ export const convertStringToDate = (date: string | Date, timezone: string = TZ):
     throw new Error('입력값이 문자열 또는 Date 객체가 아닙니다.');
   }
 
-  return utcToZonedTime(parsedDate, timezone);
+  return toZonedTime(parsedDate, timezone);
 };

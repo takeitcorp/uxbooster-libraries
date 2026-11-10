@@ -28,7 +28,7 @@
  * // false
  * toBoolean(0);
  */
-export function toBoolean(v: any): boolean {
+export function toBoolean(v: unknown): boolean {
   if (typeof v === 'number') {
     return v === v && v !== 0;
   }

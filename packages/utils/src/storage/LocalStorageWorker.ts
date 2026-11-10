@@ -70,7 +70,9 @@ export default class LocalStorageWorker {
    * 로컬 스토리지에 저장된 모든 값만을 가져옵니다.
    * @returns {Array<any>} - 로컬 스토리지에 저장된 모든 값의 배열
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- JSON.parse 결과 타입(any)을 그대로 반환
   public getAllValues(): Array<any> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- 반환 타입과 동일
     const list = new Array<any>();
 
     if (this.localStorageSupported) {

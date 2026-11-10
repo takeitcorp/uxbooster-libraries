@@ -1,5 +1,5 @@
 import { format as fnsFormat } from 'date-fns';
-import locale from 'date-fns/locale/ko/index.js';
+import { ko as locale } from 'date-fns/locale';
 
 type DateType = number | Date;
 

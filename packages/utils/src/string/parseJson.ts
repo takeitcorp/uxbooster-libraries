@@ -26,6 +26,7 @@ import { isString } from '../isString';
  * const result = parseJson(emptyString);
  * console.log(result); // null
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- JSON.parse 결과 타입(any)을 그대로 반환
 export const parseJson = (v: string): any => {
   if (isEmpty(v)) {
     return null;

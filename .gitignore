@@ -20,6 +20,9 @@ npm-debug.log*
 # typescript
 *.tsbuildinfo
 *.d.ts
+# 직접 작성한 설정 패키지의 타입 선언 파일은 포함
+!packages/eslint-config/index.d.ts
+!packages/prettier-config/index.d.ts
 
 # Turborepo
 .turbo

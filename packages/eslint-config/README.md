@@ -10,10 +10,12 @@ pnpm add -D @uxbooster/eslint-config
 
 ### 요구 사항
 
-- Node.js 20.9.0 이상
+- Node.js 26 이상
 - ESLint 9
 - Next.js 16 (`eslint-config-next`가 실행 시 `next` 패키지를 불러오므로 프로젝트에 설치되어 있어야 합니다)
 - TypeScript 5.4.5 이상, 6.1.0 미만
+
+> Next.js 15 이하 또는 Node.js 18 등 이전 환경에서는 `@uxbooster/eslint-config@^1` 버전을 사용하세요. 변경 내역은 [CHANGELOG](CHANGELOG.md)를 참고하세요.
 
 ## 커스텀 규칙 추가 설정
 
