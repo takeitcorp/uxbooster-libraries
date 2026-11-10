@@ -21,11 +21,11 @@ describe('parseJson', () => {
     console.error = jest.fn(); // Mock console.error
 
     // Test with a number input
-    expect(parseJson(123 as any)).toBeNull();
+    expect(parseJson(123 as never)).toBeNull();
     expect(console.error).toHaveBeenCalledWith('Input value is not a string.');
 
     // Test with an object input
-    expect(parseJson({} as any)).toBeNull();
+    expect(parseJson({} as never)).toBeNull();
     expect(console.error).toHaveBeenCalledWith('Input value is not a string.');
   });
 });

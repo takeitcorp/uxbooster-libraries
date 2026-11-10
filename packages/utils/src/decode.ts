@@ -12,7 +12,8 @@
  * decode(100, 1, "일", 10, "십", 100, "백", "디폴트"); // 결과: "백"
  * decode("unknown", "1", "One", "2", "Two", "Default"); // 결과: "Default"
  */
-export const decode = <T = any>(compareValue: any, ...casesAndDefault: any[]): T => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- T 기본값은 기존 사용처 호환을 위해 any 유지
+export const decode = <T = any>(compareValue: unknown, ...casesAndDefault: unknown[]): T => {
   if (casesAndDefault.length < 2) {
     throw new Error('You must provide at least one case and a default value.');
   }

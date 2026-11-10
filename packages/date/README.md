@@ -5,8 +5,15 @@
 ## 설치
 
 ```bash
-npm install @uxbooster/date
+npm install @uxbooster/date date-fns
 ```
+
+### 요구 사항
+
+- Node.js 26 이상
+- date-fns 3.6 이상 또는 4 (peer dependency이므로 프로젝트에 직접 설치해야 합니다)
+
+> Node.js 18 등 이전 환경에서는 `@uxbooster/date@^1` 버전을 사용하세요. 변경 내역은 [CHANGELOG](CHANGELOG.md)를 참고하세요.
 
 ## 사용법
 

@@ -12,7 +12,9 @@
  * // 출력: { id: 1, name: "Alice", age: 25 }
  * ```
  */
-export function copyObject<T extends Record<string, any>>(data: T): Record<string, any> {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- 반환 타입은 기존 사용처(임의 속성 접근) 호환을 위해 any 유지
+export function copyObject<T extends object>(data: T): Record<string, any> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- 반환 타입과 동일
   return Object.keys(data).reduce((acc: Record<string, any>, key) => {
     acc[key] = data[key as keyof T];
     return acc;

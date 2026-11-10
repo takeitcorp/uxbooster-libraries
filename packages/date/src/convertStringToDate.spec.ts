@@ -15,10 +15,10 @@ describe('convertStringToDate function', () => {
   });
 
   it('throws an error for non-string and non-Date inputs', () => {
-    expect(() => convertStringToDate(123 as any)).toThrow(
+    expect(() => convertStringToDate(123 as never)).toThrow(
       '입력값이 문자열 또는 Date 객체가 아닙니다.',
     );
-    expect(() => convertStringToDate(null as any)).toThrow(
+    expect(() => convertStringToDate(null as never)).toThrow(
       '입력값이 문자열 또는 Date 객체가 아닙니다.',
     );
   });

@@ -27,7 +27,7 @@
  * // '[object Object]'
  * toString({});
  */
-export function toString(v: any): string {
+export function toString(v: unknown): string {
   if (v !== null && typeof v === 'object' && v.toString) {
     return v.toString();
   }

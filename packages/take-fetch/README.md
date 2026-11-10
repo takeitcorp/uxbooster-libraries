@@ -8,6 +8,13 @@
 npm install @uxbooster/take-fetch
 ```
 
+### 요구 사항
+
+- Node.js 26 이상
+- react-promise-tracker 2.1.1 이상 (React 19 환경 기준으로 검증됨)
+
+> Node.js 18 등 이전 환경에서는 `@uxbooster/take-fetch@^1` 버전을 사용하세요. 변경 내역은 [CHANGELOG](CHANGELOG.md)를 참고하세요.
+
 ## 기본 사용법
 
 ```typescript

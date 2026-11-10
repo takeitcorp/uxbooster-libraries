@@ -31,6 +31,7 @@ export type ResponseType = 'arraybuffer' | 'blob' | 'document' | 'json' | 'text'
  * @public
  */
 export interface TakeRequestInit extends RequestInit {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- 사용자 정의 값을 담는 공개 옵션
   params?: any;
   responseType?: ResponseType;
 }
@@ -191,8 +192,10 @@ const normalizeArgs = async (...args: Parameters<typeof fetch>): Promise<TakeFet
     }
 
     return [input, requestInit];
-  } catch (error: any) {
-    throw new Error(`인수를 표준화하는 중에 오류가 발생했습니다: ${error.message}`);
+  } catch (error) {
+    throw new Error(
+      `인수를 표준화하는 중에 오류가 발생했습니다: ${error instanceof Error ? error.message : String(error)}`,
+    );
   }
 };
 
@@ -265,8 +268,10 @@ export const takeFetch =
         requestInterceptorAppliedArgs,
         providedFetch,
       ) || responseWithElapsedTime);
-    } catch (error: any) {
+    } catch (error) {
       console.error(error);
-      throw new Error(`takeFetch를 실행하는 중에 오류가 발생했습니다: ${error.message}`);
+      throw new Error(
+        `takeFetch를 실행하는 중에 오류가 발생했습니다: ${error instanceof Error ? error.message : String(error)}`,
+      );
     }
   };

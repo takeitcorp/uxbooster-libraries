@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/crypto",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Crypto utility library for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=26.0.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
     "build": "tsc -p tsconfig.build.json",
     "clean:build": "rimraf ./dist",
     "dev": "nodemon",
-    "lint": "eslint . --ext .js,.ts",
+    "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",

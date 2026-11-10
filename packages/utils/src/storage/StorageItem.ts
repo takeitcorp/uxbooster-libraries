@@ -14,6 +14,7 @@ export interface IStorageItem {
    * 데이터의 값 (value)입니다.
    * @type {any}
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- 임의 값을 저장하는 공개 속성
   value: any;
 }
 
@@ -37,6 +38,7 @@ export class StorageItem {
    * 데이터의 값 (value)입니다.
    * @type {any}
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- 임의 값을 저장하는 공개 속성
   public value: any;
 
   /**

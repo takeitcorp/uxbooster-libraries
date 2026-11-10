@@ -1,0 +1,2 @@
+# 개발자 OS/core.autocrlf 설정과 관계없이 LF로 체크아웃 (.editorconfig의 end_of_line = lf 와 일치)
+* text=auto eol=lf
