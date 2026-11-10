@@ -36,7 +36,7 @@
  * // false
  * isEmpty({ key: 'value' });
  */
-export function isEmpty(v: any): boolean {
+export function isEmpty(v: unknown): boolean {
   if (v === null || v === undefined || v === '') return true;
   if (Array.isArray(v) && v.length === 0) return true;
   if (typeof v === 'object' && Object.keys(v).length === 0) return true;

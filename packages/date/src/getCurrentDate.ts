@@ -1,4 +1,4 @@
-import { utcToZonedTime } from 'date-fns-tz';
+import { toZonedTime } from 'date-fns-tz';
 
 const TZ = 'Asia/Seoul';
 
@@ -12,4 +12,4 @@ const TZ = 'Asia/Seoul';
  * // 현재 시각을 Asia/Seoul 시간대로 변환하여 반환
  * getCurrentDate();
  */
-export const getCurrentDate = (timezone: string = TZ): Date => utcToZonedTime(Date.now(), timezone);
+export const getCurrentDate = (timezone: string = TZ): Date => toZonedTime(Date.now(), timezone);

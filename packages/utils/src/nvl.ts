@@ -25,6 +25,7 @@
  * // true
  * nvl(true, 'default');
  */
-export function nvl(v: any, def: any): any {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- 반환 타입은 기존 사용처 호환을 위해 any 유지
+export function nvl(v: unknown, def: any): any {
   return v === undefined || v === null || v === '' ? def : v;
 }

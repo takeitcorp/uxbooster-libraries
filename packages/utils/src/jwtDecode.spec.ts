@@ -50,30 +50,28 @@ describe('jwtDecode function', () => {
     const badToken = null;
     expect(() => {
       jwtDecode(badToken as unknown as string);
-    }).toThrowError(new InvalidTokenError('유효하지 않은 토큰입니다: 문자열이어야 합니다.'));
+    }).toThrow(new InvalidTokenError('유효하지 않은 토큰입니다: 문자열이어야 합니다.'));
   });
 
   it('토큰이 아닌 문자열에 대해 InvalidTokenError를 던져야 한다', () => {
     const badToken = 'fubar';
     expect(() => {
       jwtDecode(badToken);
-    }).toThrowError(
-      new InvalidTokenError('유효하지 않은 토큰입니다: 2번째 부분이 누락되었습니다.'),
-    );
+    }).toThrow(new InvalidTokenError('유효하지 않은 토큰입니다: 2번째 부분이 누락되었습니다.'));
   });
 
   it('토큰이 null일 때 InvalidTokenError를 던져야 한다', () => {
     const badToken = null;
     expect(() => {
       jwtDecode(badToken as unknown as string, { header: true });
-    }).toThrowError(new InvalidTokenError('유효하지 않은 토큰입니다: 문자열이어야 합니다.'));
+    }).toThrow(new InvalidTokenError('유효하지 않은 토큰입니다: 문자열이어야 합니다.'));
   });
 
   it('1번째 부분이 누락된 경우 InvalidTokenError를 던져야 한다', () => {
     const badToken = '.FAKE_TOKEN';
     expect(() => {
       jwtDecode(badToken, { header: true });
-    }).toThrowError(
+    }).toThrow(
       new InvalidTokenError(
         '유효하지 않은 토큰입니다: 1번째 부분의 JSON 형식이 잘못되었습니다. (Unexpected end of JSON input)',
       ),
@@ -84,7 +82,7 @@ describe('jwtDecode function', () => {
     const badToken = 'TOKEN';
     expect(() => {
       jwtDecode(badToken, { header: true });
-    }).toThrowError(
+    }).toThrow(
       new InvalidTokenError(
         '유효하지 않은 토큰입니다: 1번째 부분의 Base64 형식이 잘못되었습니다. (Base64 문자열의 길이가 올바르지 않습니다.)',
       ),
@@ -95,8 +93,9 @@ describe('jwtDecode function', () => {
     const badToken = 'FAKE.TOKEN';
     expect(() => {
       jwtDecode(badToken, { header: true });
-    }).toThrowError(
-      /유효하지 않은 토큰입니다: 1번째 부분의 JSON 형식이 잘못되었습니다. \(Unexpected token .* in JSON at position 0\)/,
+    }).toThrow(
+      // JSON.parse 에러 메시지는 Node.js(V8) 버전마다 다르므로 메시지 본문은 검사하지 않음
+      /유효하지 않은 토큰입니다: 1번째 부분의 JSON 형식이 잘못되었습니다. \(Unexpected token .*\)/,
     );
   });
 
@@ -104,16 +103,14 @@ describe('jwtDecode function', () => {
     const badToken = 'FAKE_TOKEN';
     expect(() => {
       jwtDecode(badToken);
-    }).toThrowError(
-      new InvalidTokenError('유효하지 않은 토큰입니다: 2번째 부분이 누락되었습니다.'),
-    );
+    }).toThrow(new InvalidTokenError('유효하지 않은 토큰입니다: 2번째 부분이 누락되었습니다.'));
   });
 
   it('2번째 부분이 유효하지 않은 Base64일 때 InvalidTokenError를 던져야 한다', () => {
     const badToken = 'FAKE.TOKEN';
     expect(() => {
       jwtDecode(badToken);
-    }).toThrowError(
+    }).toThrow(
       new InvalidTokenError(
         '유효하지 않은 토큰입니다: 2번째 부분의 Base64 형식이 잘못되었습니다. (Base64 문자열의 길이가 올바르지 않습니다.)',
       ),
@@ -124,10 +121,8 @@ describe('jwtDecode function', () => {
     const badToken = 'FAKE.TOKEN2';
     expect(() => {
       jwtDecode(badToken);
-    }).toThrowError(
-      new InvalidTokenError(
-        '유효하지 않은 토큰입니다: 2번째 부분의 JSON 형식이 잘못되었습니다. (Unexpected token L in JSON at position 0)',
-      ),
+    }).toThrow(
+      /유효하지 않은 토큰입니다: 2번째 부분의 JSON 형식이 잘못되었습니다. \(Unexpected token .*\)/,
     );
   });
 });

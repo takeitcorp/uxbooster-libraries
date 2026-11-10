@@ -2,6 +2,23 @@
 
 이 프로젝트의 변경 사항을 문서화합니다.
 
+## [2.0.0] - 2026-11-10
+
+### Changed
+
+- **BREAKING** Node.js 최소 버전을 26.0.0으로 상향함.
+- 빌드 환경 변경: TypeScript 6.0, `moduleResolution: bundler` 기준으로 빌드함 (공개 API 변경 없음).
+- 입력 전용 파라미터 타입을 `any` → `unknown`으로 변경함: `isEmpty`, `isString`, `toBoolean`, `toInt`, `toString`, `nvl`(첫 번째 인자), `decode`(비교값/케이스). 모든 값을 그대로 전달할 수 있어 호출부 변경은 필요 없음.
+- `copyObject`의 제네릭 제약을 `Record<string, any>` → `object`로 변경함 (반환 타입은 동일).
+
+### Added
+
+- `formatToKoreanNumber`, `formatToKRW`의 옵션 타입 `FormatOptions`를 export함.
+
+### Fixed
+
+- `FormatOptions` 타입 정의 파일(`number/types`)이 배포 패키지에 누락되어 `formatToKRW`, `formatToKoreanNumber`의 타입 선언이 깨지던 문제 수정.
+
 ## [1.0.8] - 2025-03-14
 
 ### Added

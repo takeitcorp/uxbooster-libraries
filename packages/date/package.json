@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/date",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Date utility library for UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=26.0.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,7 +32,7 @@
     "build": "tsc -p tsconfig.build.json",
     "clean:build": "rimraf ./dist",
     "dev": "nodemon",
-    "lint": "eslint . --ext .js,.ts",
+    "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
@@ -40,7 +40,12 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "date-fns": "^2.30.0",
-    "date-fns-tz": "^2.0.1"
+    "date-fns-tz": "^3.2.0"
+  },
+  "peerDependencies": {
+    "date-fns": "^3.6.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "date-fns": "^4.4.0"
   }
 }

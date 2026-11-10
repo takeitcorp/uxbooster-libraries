@@ -1,6 +1,6 @@
 {
   "name": "@uxbooster/prettier-config",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Prettier configuration used by UXBooster.",
   "author": "Take Corp.",
   "license": "MIT",
@@ -21,29 +21,29 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.20.2"
+    "node": ">=26.0.0"
   },
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "CHANGELOG.md"
+  ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "clean:build": "rimraf ./dist",
-    "dev": "nodemon",
-    "lint": "eslint . --ext .js,.ts",
+    "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --check .",
-    "format:fix": "prettier --write .",
-    "test": "jest --verbose",
-    "typecheck": "tsc"
+    "format:fix": "prettier --write ."
   },
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^5.2.1"
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2"
   },
   "peerDependencies": {
     "prettier": ">=3.0.0"
   },
   "devDependencies": {
-    "prettier": "^3.4.2"
+    "prettier": "^3.5.1"
   }
 }
